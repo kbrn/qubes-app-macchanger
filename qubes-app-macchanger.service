@@ -1,0 +1,8 @@
+[Unit]
+Description=WiFi card MAC changer
+
+[Service]
+ExecStart=/usr/local/libexec/qubes/change-mac.sh
+
+[Install]
+WantedBy=default.target

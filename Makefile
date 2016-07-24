@@ -8,6 +8,8 @@ all:
 install:
 	install -d $(DESTDIR)/usr/local/libexec/qubes
 	install -d $(DESTDIR)/usr/local/etc/qubes-macchanger
+	install -d $(DESTDIR)/usr/lib/systemd/user/
+	install qubes-app-macchanger.service $(DESTDIR)/usr/lib/systemd/user/qubes-app-macchanger.service
 	install change-mac.sh $(DESTDIR)/usr/local/libexec/qubes/change-mac.sh
 	install macchanger.conf $(DESTDIR)/usr/local/etc/qubes-macchanger/macchanger.conf
 
