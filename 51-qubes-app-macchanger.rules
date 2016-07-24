@@ -1,0 +1,1 @@
+SUBSYSTEM=="net", ACTION=="add", DRIVERS="iwlwifi", RUN+="/usr/local/libexec/qubes/change-mac.sh %k"
