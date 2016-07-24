@@ -1,8 +1,9 @@
 [Unit]
 Description=WiFi card MAC changer
+ConditionPathExists=/var/run/qubes-service/qubes-app-macchanger
 
 [Service]
 ExecStart=/usr/local/libexec/qubes/change-mac.sh
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target

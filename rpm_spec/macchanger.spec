@@ -38,7 +38,7 @@ make install DESTDIR=%{buildroot}
 %files
 %doc README.md
 %defattr(-,root,root,-)
-/usr/lib/systemd/user/qubes-app-macchanger.service
+%attr(0664,root,qubes) /usr/lib/systemd/system/qubes-app-macchanger.service
 %attr(0664,root,qubes) %config(noreplace) /usr/local/etc/qubes-macchanger/macchanger.conf
 %attr(0774,root,qubes) /usr/local/libexec/qubes/change-mac.sh
 
